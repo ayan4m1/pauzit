@@ -9,6 +9,9 @@
   "bin": {
     "pauzit": "./src/index.js"
   },
+  "files": [
+    "src/**/*.js"
+  ],
   "scripts": {
     "start": "node src/index.js"
   },
