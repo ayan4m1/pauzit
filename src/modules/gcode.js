@@ -10,7 +10,7 @@ const log = getLogger('gcode');
 
 const extruderChangePattern = /^T[0-9]+ ; change extruder$/gm;
 const toolChangePattern =
-  /^; CP TOOLCHANGE START$\n^; toolchange #([0-9]+)$\n^; material : (\w+) -> (\w+)$\n^;-+$\n^((.|\n)+)$\n^; CP TOOLCHANGE UNLOAD$/gm;
+  /^; CP TOOLCHANGE START$\n^; toolchange #([0-9]+)$\n^; material : ([\w\d]+) -> ([\w\d]+)$\n^;-+$\n^((.|\n)+)$\n^; CP TOOLCHANGE UNLOAD$/gm;
 const transformer = new Transform({
   transform: (chunk, _, callback) =>
     callback(
