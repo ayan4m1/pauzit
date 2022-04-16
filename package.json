@@ -5,6 +5,10 @@
   "author": "ayan4m1 <andrew@bulletlogic.com>",
   "license": "MIT",
   "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "pauzit": "./src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js"
   },
