@@ -13,7 +13,9 @@
     "src/**/*.js"
   ],
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "commit": "cz",
+    "version": "auto-changelog -p --hide-credit -l 20 -b 20"
   },
   "dependencies": {
     "commander": "^9.2.0",
@@ -22,6 +24,11 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "auto-changelog": "^2.4.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -30,5 +37,10 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
