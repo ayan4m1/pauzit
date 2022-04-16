@@ -10,6 +10,14 @@ This allows you to make SEMM prints without any special hardware, by manually sw
 
 # usage
 
+Install pauzit globally using
+
+> npm install -g pauzit
+>
+> pauzit convert input.gcode output.gcode
+
+Or run it with `npx` using
+
 > npx pauzit convert input.gcode output.gcode
 
 If you omit the output filename, a new file named `{input}.pauz.gcode` will be created.
