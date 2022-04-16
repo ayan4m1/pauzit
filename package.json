@@ -15,7 +15,7 @@
   "scripts": {
     "start": "node src/index.js",
     "commit": "cz",
-    "version": "auto-changelog -p --hide-credit -l 20 -b 20"
+    "preversion": "auto-changelog -p --hide-credit -l 20 -b 20 && git add CHANGELOG.md"
   },
   "dependencies": {
     "commander": "^9.2.0",
